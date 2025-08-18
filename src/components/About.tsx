@@ -1,3 +1,5 @@
+import aboutImage from '../assets/kelvin-about.jpeg';
+
 const About = () => {
   const stats = [
     { number: '3+', label: 'Years Experience' },
@@ -98,7 +100,7 @@ const About = () => {
               <div className="relative">
                 <div className="relative z-10 bg-gradient-to-br from-primary-500 to-accent-500 rounded-3xl p-1 shadow-strong">
                   <img
-                    src="/kelvin-adjei-portfolio/images/kelvin-about.jpeg"
+                    src={aboutImage}
                     alt="Kelvin Adjei - About"
                     className="w-full h-[400px] md:h-[500px] object-cover rounded-3xl"
                   />

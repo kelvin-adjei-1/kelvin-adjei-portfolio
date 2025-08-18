@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import profileImage from '../assets/kelvin-profile-photo.jpeg';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -52,7 +53,7 @@ const Hero = () => {
             <div className="relative inline-block">
               <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white dark:border-dark-800 shadow-strong mx-auto bg-gradient-to-br from-primary-500 to-accent-500 p-1">
                 <img
-                  src="/kelvin-adjei-portfolio/images/kelvin-profile-photo.jpeg"
+                  src={profileImage}
                   alt="Kelvin Adjei"
                   className="w-full h-full rounded-full object-cover"
                 />

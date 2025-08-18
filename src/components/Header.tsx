@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import logoImage from '../assets/geometric-emblem.png';
 
 interface HeaderProps {
   darkMode: boolean;
@@ -47,7 +48,7 @@ const Header = ({ darkMode, toggleDarkMode }: HeaderProps) => {
           {/* Logo */}
           <div className="flex items-center space-x-3 flex-nowrap">
             <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center shadow-lg">
-              <img src="/kelvin-adjei-portfolio/images/geometric-emblem.png" alt="Portfolio Logo" className="w-7 h-7 object-contain" height={50} width={50} />
+              <img src={logoImage} alt="Portfolio Logo" className="w-7 h-7 object-contain" height={50} width={50} />
             </div>
             <div className="text-lg font-bold gradient-text whitespace-nowrap">
               <a href="#home">Kelvin's Portfolio</a>
