@@ -1,4 +1,4 @@
-import aboutImage from '../assets/kelvin-about.jpeg';
+import aboutImage from '../assets/images/kelvin-about.jpeg';
 
 const About = () => {
   const stats = [

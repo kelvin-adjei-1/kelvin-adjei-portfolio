@@ -112,7 +112,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 ## 📞 Contact
 
-Kelvin Adjei - [your.email@example.com](mailto:your.email@example.com)
+Kelvin Adjei - [kpkadjei1@gmail.com](mailto:kpkadjei1@gmail.com)
 
 Project Link: [https://github.com/yourusername/kelvin-adjei-portfolio](https://github.com/yourusername/kelvin-adjei-portfolio)
 

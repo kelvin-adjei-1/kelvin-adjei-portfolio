@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import logoImage from '../assets/geometric-emblem.png';
+import logoImage from '../assets/images/geometric-emblem.png';
 
 interface HeaderProps {
   darkMode: boolean;
@@ -39,7 +39,7 @@ const Header = ({ darkMode, toggleDarkMode }: HeaderProps) => {
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-white/80 dark:bg-dark-950/80 backdrop-blur-lg shadow-soft dark:shadow-dark-soft border-b border-secondary-200/50 dark:border-secondary-800/50' 
+          ? 'bg-white bg-opacity-80 dark:bg-dark-950 dark:bg-opacity-80 backdrop-blur-lg shadow-soft dark:shadow-dark-soft border-b border-secondary-200 border-opacity-50 dark:border-secondary-800 dark:border-opacity-50' 
           : 'bg-transparent'
       }`}
     >
@@ -51,7 +51,7 @@ const Header = ({ darkMode, toggleDarkMode }: HeaderProps) => {
               <img src={logoImage} alt="Portfolio Logo" className="w-7 h-7 object-contain" height={50} width={50} />
             </div>
             <div className="text-lg font-bold gradient-text whitespace-nowrap">
-              <a href="#home">Kelvin's Portfolio</a>
+              <button onClick={() => scrollToSection('home')}>Kelvin's Portfolio</button>
             </div>
           </div>
           
@@ -63,7 +63,7 @@ const Header = ({ darkMode, toggleDarkMode }: HeaderProps) => {
                 onClick={() => scrollToSection(item.id)}
                 className="px-4 py-2 text-sm font-medium text-secondary-700 dark:text-secondary-300 
                          hover:text-primary-600 dark:hover:text-primary-400 
-                         hover:bg-primary-50 dark:hover:bg-primary-950/50 
+                         hover:bg-primary-50 dark:hover:bg-primary-950 dark:hover:bg-opacity-50 
                          rounded-lg transition-all duration-200 focus-ring"
               >
                 {item.label}
@@ -132,7 +132,7 @@ const Header = ({ darkMode, toggleDarkMode }: HeaderProps) => {
         <div className={`lg:hidden transition-all duration-300 overflow-hidden ${
           isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         }`}>
-          <div className="py-4 space-y-1 bg-white/90 dark:bg-dark-900/90 backdrop-blur-lg rounded-2xl mt-2 border border-secondary-200/50 dark:border-secondary-800/50 shadow-medium">
+          <div className="py-4 space-y-1 bg-white bg-opacity-90 dark:bg-dark-900 dark:bg-opacity-90 backdrop-blur-lg rounded-2xl mt-2 border border-secondary-200 border-opacity-50 dark:border-secondary-800 dark:border-opacity-50 shadow-medium">
             {navItems.map((item) => (
               <button
                 key={item.id}
@@ -140,7 +140,7 @@ const Header = ({ darkMode, toggleDarkMode }: HeaderProps) => {
                 className="block w-full text-left px-6 py-3 text-sm font-medium 
                          text-secondary-700 dark:text-secondary-300 
                          hover:text-primary-600 dark:hover:text-primary-400 
-                         hover:bg-primary-50 dark:hover:bg-primary-950/50 
+                         hover:bg-primary-50 dark:hover:bg-primary-950 dark:hover:bg-opacity-50 
                          transition-all duration-200 focus-ring rounded-lg mx-2"
               >
                 {item.label}
