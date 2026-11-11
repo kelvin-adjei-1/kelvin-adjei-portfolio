@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import emblem from '../assets/geometric-emblem.png';
+import emblem from '../assets/images/geometric-emblem.png';
 
 interface HeaderProps {
   darkMode: boolean;

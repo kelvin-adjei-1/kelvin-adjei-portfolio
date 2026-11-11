@@ -1,4 +1,4 @@
-import profilePhoto from '../assets/kelvin-profile-photo.jpeg';
+import profilePhoto from '../assets/images/kelvin-profile-photo.jpeg';
 import { contact } from '../data/portfolio';
 
 const Hero = () => (
