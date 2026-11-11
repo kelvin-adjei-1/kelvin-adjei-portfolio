@@ -17,7 +17,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '18'
+        node-version: '22'
         cache: 'npm'
 
     - name: Install dependencies
@@ -27,14 +27,17 @@ jobs:
       run: npm run build
 
     - name: Setup Pages
+      if: github.event_name == 'push'
       uses: actions/configure-pages@v4
 
     - name: Upload artifact
+      if: github.event_name == 'push'
       uses: actions/upload-pages-artifact@v3
       with:
         path: dist
 
     - name: Deploy to GitHub Pages
+      if: github.event_name == 'push'
       id: deployment
       uses: actions/deploy-pages@v4
 
