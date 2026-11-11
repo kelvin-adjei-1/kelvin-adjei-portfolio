@@ -35,13 +35,14 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-dark-950 text-secondary-900 dark:text-secondary-100 transition-colors duration-300">
+      <a href="#main-content" className="skip-link">Skip to content</a>
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <main>
+      <main id="main-content">
         <Hero />
         <About />
-        <Experience />
-        <Skills />
         <Projects />
+        <Skills />
+        <Experience />
         <Contact />
       </main>
       <Footer />
