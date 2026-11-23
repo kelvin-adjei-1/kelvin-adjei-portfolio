@@ -9,16 +9,16 @@ import {
 import { skills } from '../data/portfolio';
 
 const categoryStyles: Record<(typeof skills)[number]['title'], { icon: typeof CodeBracketIcon; color: string }> = {
-  Languages: { icon: CodeBracketIcon, color: 'bg-teal-100 text-teal-800 dark:bg-violet-500/20 dark:text-violet-200' },
-  'Frameworks & UI': { icon: RectangleGroupIcon, color: 'bg-indigo-100 text-indigo-800 dark:bg-fuchsia-500/20 dark:text-fuchsia-200' },
-  Databases: { icon: CircleStackIcon, color: 'bg-amber-100 text-amber-800 dark:bg-sky-500/20 dark:text-sky-200' },
-  'Data & reporting': { icon: ChartBarIcon, color: 'bg-rose-100 text-rose-800 dark:bg-emerald-500/20 dark:text-emerald-200' },
-  'Cloud & DevOps': { icon: CloudIcon, color: 'bg-sky-100 text-sky-800 dark:bg-amber-500/20 dark:text-amber-200' },
-  'Engineering practices': { icon: Cog6ToothIcon, color: 'bg-emerald-100 text-emerald-800 dark:bg-rose-500/20 dark:text-rose-200' },
+  Languages: { icon: CodeBracketIcon, color: 'bg-primary-100 text-primary-800 dark:bg-primary-500/20 dark:text-primary-200' },
+  'Frameworks & UI': { icon: RectangleGroupIcon, color: 'bg-primary-100 text-primary-800 dark:bg-primary-500/20 dark:text-primary-200' },
+  Databases: { icon: CircleStackIcon, color: 'bg-primary-100 text-primary-800 dark:bg-primary-500/20 dark:text-primary-200' },
+  'Data & reporting': { icon: ChartBarIcon, color: 'bg-primary-100 text-primary-800 dark:bg-primary-500/20 dark:text-primary-200' },
+  'Cloud & DevOps': { icon: CloudIcon, color: 'bg-primary-100 text-primary-800 dark:bg-primary-500/20 dark:text-primary-200' },
+  'Engineering practices': { icon: Cog6ToothIcon, color: 'bg-primary-100 text-primary-800 dark:bg-primary-500/20 dark:text-primary-200' },
 };
 
 const Skills = () => (
-  <section id="skills" className="section-padding bg-teal-50/60 dark:bg-dark-950" aria-labelledby="skills-heading">
+  <section id="skills" className="section-padding bg-primary-50/60 dark:bg-dark-950" aria-labelledby="skills-heading">
     <div className="container-custom max-w-6xl">
       <div className="section-heading">
         <p className="section-kicker">The toolkit</p>
