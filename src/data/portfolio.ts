@@ -23,6 +23,8 @@ export const projects = [
     technologies: ['Angular', 'ASP.NET Core', 'PostgreSQL'],
     status: 'Private repository',
     featured: true,
+    link: 'https://myhealthjourney.us/',
+    linkLabel: 'Visit website',
   },
   {
     title: 'Property Management Console',
