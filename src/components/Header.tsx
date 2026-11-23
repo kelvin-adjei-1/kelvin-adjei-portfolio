@@ -18,12 +18,12 @@ const Header = ({ darkMode, toggleDarkMode }: HeaderProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-primary-100 bg-white/95 backdrop-blur-md dark:border-violet-400/20 dark:bg-dark-950/95">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-primary-100 bg-white/95 backdrop-blur-md dark:border-primary-400/20 dark:bg-dark-950/95">
       <nav className="container-custom max-w-6xl" aria-label="Main navigation">
         <div className="flex h-20 items-center justify-between gap-4">
           <a href="#home" className="focus-ring flex items-center gap-3 rounded-lg font-bold text-secondary-900 dark:text-white" onClick={() => setIsMenuOpen(false)}>
-            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary-700 dark:bg-violet-700"><img src={emblem} alt="" className="h-7 w-7 object-contain" /></span>
-            <span>Kelvin Adjei<span className="text-primary-600 dark:text-violet-300">.</span></span>
+            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary-700 dark:bg-primary-700"><img src={emblem} alt="" className="h-7 w-7 object-contain" /></span>
+            <span>Kelvin Adjei<span className="text-primary-600 dark:text-primary-300">.</span></span>
           </a>
           <div className="hidden items-center gap-1 lg:flex">
             {navItems.map((item) => <a key={item.id} href={`#${item.id}`} className="nav-link">{item.label}</a>)}

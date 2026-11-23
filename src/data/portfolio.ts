@@ -7,6 +7,24 @@ export const contact = {
 
 export const projects = [
   {
+    title: 'FormationAI',
+    category: 'AI engineering workspace',
+    description: 'A local engineering workspace prototype for turning a task into a structured, reviewable plan.',
+    details: 'Combines mock or OpenAI-powered planning with human decisions, a fixed change preview, and a separately approved, restricted execution demonstration.',
+    technologies: ['Angular', 'ASP.NET Core', 'Python', 'PostgreSQL'],
+    status: 'Private repository · Local prototype',
+    featured: true,
+  },
+  {
+    title: 'MyHealthJourney',
+    category: 'Health & wellness',
+    description: 'A mobile-first health journey tracker bringing nutrition, training, recovery, and progress into one place.',
+    details: 'Includes private accounts, daily tracking, and evidence-based weekly reviews with explicit user decisions and plan history.',
+    technologies: ['Angular', 'ASP.NET Core', 'PostgreSQL'],
+    status: 'Private repository',
+    featured: true,
+  },
+  {
     title: 'Property Management Console',
     category: 'Web platform',
     description: 'A real estate platform for property listings, tenant management, rent payments, and real-time property dashboards.',
@@ -39,10 +57,10 @@ export const projects = [
 export const skills = [
   { title: 'Languages', description: 'The building blocks behind my applications.', items: ['C#', 'Java', 'Python', 'JavaScript'] },
   { title: 'Frameworks & UI', description: 'Building web and desktop experiences.', items: ['.NET', 'Angular', 'Node.js', 'React', 'WinForms'] },
-  { title: 'Databases', description: 'Designing and working with application data.', items: ['Microsoft SQL Server', 'MySQL', 'NoSQL', 'MongoDB', 'SQL queries', 'Relational database design'] },
+  { title: 'Databases', description: 'Designing and working with application data.', items: ['PostgreSQL', 'Microsoft SQL Server', 'MySQL', 'NoSQL', 'MongoDB', 'SQL queries', 'Relational database design'] },
   { title: 'Data & reporting', description: 'Connecting data and making it useful.', items: ['ETL processes', 'Data integration', 'Active Reports'] },
   { title: 'Cloud & DevOps', description: 'Deploying and operating scalable applications.', items: ['Azure', 'AWS', 'Google Cloud', 'Docker', 'Kubernetes', 'Rancher', 'CI/CD', 'Containerization'] },
-  { title: 'Engineering practices', description: 'Maintaining and improving software over time.', items: ['Testing & debugging', 'Cloud deployment', 'Application modernization'] },
+  { title: 'Engineering practices', description: 'Maintaining and improving software over time.', items: ['AI-assisted workflows', 'Testing & debugging', 'Cloud deployment', 'Application modernization'] },
 ] as const;
 
 export const experiences = [
