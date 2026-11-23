@@ -7,7 +7,7 @@ const About = () => (
       </div>
       <div className="space-y-5 text-lg leading-relaxed text-secondary-700 dark:text-secondary-300">
         <p>I'm Kelvin Adjei, a software engineer based in Charlotte, North Carolina. My work spans full-stack development, cloud deployment, and data integration.</p>
-        <p>I've worked on agent performance, healthcare, billing, and customer service solutions, including AI-assisted coaching and tools that connect people with the information they need.</p>
+        <p>I've worked on agent performance, healthcare, billing, and customer service solutions, and I enjoy bringing AI-assisted workflows into practical applications with human oversight.</p>
         <p>Outside of software development, I enjoy soccer, running, movies, and hiking.</p>
       </div>
     </div>

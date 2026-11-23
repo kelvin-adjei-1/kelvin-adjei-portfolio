@@ -12,7 +12,7 @@ const Experience = () => (
         {experiences.map((experience) => (
           <article key={experience.title} className="portfolio-card grid gap-5 md:grid-cols-[220px_1fr] md:gap-10">
             <div>
-              <p className="font-semibold text-primary-700 dark:text-violet-300">{experience.period}</p>
+              <p className="font-semibold text-primary-700 dark:text-primary-300">{experience.period}</p>
               <p className="mt-1 text-sm text-secondary-600 dark:text-secondary-400">{experience.location}</p>
             </div>
             <div>
@@ -26,7 +26,7 @@ const Experience = () => (
         ))}
         <article className="portfolio-card grid gap-5 md:grid-cols-[220px_1fr] md:gap-10">
           <div>
-            <p className="font-semibold text-primary-700 dark:text-violet-300">Sep 2017 – May 2021</p>
+            <p className="font-semibold text-primary-700 dark:text-primary-300">Sep 2017 – May 2021</p>
             <p className="mt-1 text-sm text-secondary-600 dark:text-secondary-400">Swarthmore, PA</p>
           </div>
           <div>
